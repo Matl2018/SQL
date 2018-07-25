@@ -49,12 +49,8 @@ values
 insert into invoices
     (reservation_id, total, invoice_date_time, paid)
 values
-    (123, 143.50, '01/01/2017');
+    (123, 143.50, '01/01/2017', 0);
 
-insert into invoices
-    (reservation_id, total, invoice_date_time)
-values
-    (123, 250.50, '02/01/2017');
 
 
 
