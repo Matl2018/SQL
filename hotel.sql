@@ -29,7 +29,9 @@ create table invoices
     reservation_id integer primary key,
     total number,
     invoice_date_time datetime not null,
-    paid boolean default false
+    paid boolean default false,
+    email VARCHAR,
+    FOREIGN KEY(email) REFERENCES customers(email)
 );
 
 insert into invoices
