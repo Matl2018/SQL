@@ -26,12 +26,14 @@ values("Mr", "Colm", "OConner", "colm.oconner.github@gmail.com" );
 
 create table invoices
 (
-    reservation_id integer primary key,
+    reservation_id integer primary key autoincrement,
     total number,
     invoice_date_time datetime not null,
     paid boolean default false,
     email VARCHAR,
-    FOREIGN KEY(email) REFERENCES customers(email)
+    FOREIGN KEY
+(email) REFERENCES customers
+(email)
 );
 
 insert into invoices
